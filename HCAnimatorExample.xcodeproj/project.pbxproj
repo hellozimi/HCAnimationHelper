@@ -16,22 +16,27 @@
 		F43FECE5168107720067CD1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F43FECE4168107720067CD1F /* Default.png */; };
 		F43FECE7168107720067CD1F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43FECE6168107720067CD1F /* Default@2x.png */; };
 		F43FECE9168107720067CD1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43FECE8168107720067CD1F /* Default-568h@2x.png */; };
+		F43FECF3168108A50067CD1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43FECF2168108A50067CD1F /* ViewController.m */; };
+		F43FECF5168108B00067CD1F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43FECF4168108B00067CD1F /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F43FECCE168107720067CD1F /* HCAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43FECCE168107720067CD1F /* HCAnimatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCAnimatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43FECD2168107720067CD1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F43FECD4168107720067CD1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F43FECD6168107720067CD1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F43FECDA168107720067CD1F /* HCAnimator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HCAnimator-Info.plist"; sourceTree = "<group>"; };
+		F43FECDA168107720067CD1F /* HCAnimatorExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HCAnimatorExample-Info.plist"; sourceTree = "<group>"; };
 		F43FECDC168107720067CD1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F43FECDE168107720067CD1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F43FECE0168107720067CD1F /* HCAnimator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HCAnimator-Prefix.pch"; sourceTree = "<group>"; };
+		F43FECE0168107720067CD1F /* HCAnimatorExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HCAnimatorExample-Prefix.pch"; sourceTree = "<group>"; };
 		F43FECE1168107720067CD1F /* HCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAppDelegate.h; sourceTree = "<group>"; };
 		F43FECE2168107720067CD1F /* HCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAppDelegate.m; sourceTree = "<group>"; };
 		F43FECE4168107720067CD1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F43FECE6168107720067CD1F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F43FECE8168107720067CD1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F43FECF1168108A50067CD1F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F43FECF2168108A50067CD1F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F43FECF4168108B00067CD1F /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F43FECD8168107720067CD1F /* HCAnimator */,
+				F43FECEF168108880067CD1F /* Source */,
 				F43FECD1168107720067CD1F /* Frameworks */,
 				F43FECCF168107720067CD1F /* Products */,
 			);
@@ -60,7 +66,7 @@
 		F43FECCF168107720067CD1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F43FECCE168107720067CD1F /* HCAnimator.app */,
+				F43FECCE168107720067CD1F /* HCAnimatorExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,8 +84,10 @@
 		F43FECD8168107720067CD1F /* HCAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				F43FECF0168108970067CD1F /* Classes */,
 				F43FECE1168107720067CD1F /* HCAppDelegate.h */,
 				F43FECE2168107720067CD1F /* HCAppDelegate.m */,
+				F43FECF4168108B00067CD1F /* MainStoryboard.storyboard */,
 				F43FECD9168107720067CD1F /* Supporting Files */,
 			);
 			path = HCAnimator;
@@ -88,10 +96,10 @@
 		F43FECD9168107720067CD1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F43FECDA168107720067CD1F /* HCAnimator-Info.plist */,
+				F43FECDA168107720067CD1F /* HCAnimatorExample-Info.plist */,
 				F43FECDB168107720067CD1F /* InfoPlist.strings */,
 				F43FECDE168107720067CD1F /* main.m */,
-				F43FECE0168107720067CD1F /* HCAnimator-Prefix.pch */,
+				F43FECE0168107720067CD1F /* HCAnimatorExample-Prefix.pch */,
 				F43FECE4168107720067CD1F /* Default.png */,
 				F43FECE6168107720067CD1F /* Default@2x.png */,
 				F43FECE8168107720067CD1F /* Default-568h@2x.png */,
@@ -99,12 +107,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F43FECEF168108880067CD1F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F43FECF0168108970067CD1F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F43FECF1168108A50067CD1F /* ViewController.h */,
+				F43FECF2168108A50067CD1F /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F43FECCD168107720067CD1F /* HCAnimator */ = {
+		F43FECCD168107720067CD1F /* HCAnimatorExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F43FECEC168107720067CD1F /* Build configuration list for PBXNativeTarget "HCAnimator" */;
+			buildConfigurationList = F43FECEC168107720067CD1F /* Build configuration list for PBXNativeTarget "HCAnimatorExample" */;
 			buildPhases = (
 				F43FECCA168107720067CD1F /* Sources */,
 				F43FECCB168107720067CD1F /* Frameworks */,
@@ -114,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = HCAnimator;
+			name = HCAnimatorExample;
 			productName = HCAnimator;
-			productReference = F43FECCE168107720067CD1F /* HCAnimator.app */;
+			productReference = F43FECCE168107720067CD1F /* HCAnimatorExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +153,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = hiddencode.me;
 			};
-			buildConfigurationList = F43FECC8168107720067CD1F /* Build configuration list for PBXProject "HCAnimator" */;
+			buildConfigurationList = F43FECC8168107720067CD1F /* Build configuration list for PBXProject "HCAnimatorExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F43FECCD168107720067CD1F /* HCAnimator */,
+				F43FECCD168107720067CD1F /* HCAnimatorExample */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +179,7 @@
 				F43FECE5168107720067CD1F /* Default.png in Resources */,
 				F43FECE7168107720067CD1F /* Default@2x.png in Resources */,
 				F43FECE9168107720067CD1F /* Default-568h@2x.png in Resources */,
+				F43FECF5168108B00067CD1F /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +192,7 @@
 			files = (
 				F43FECDF168107720067CD1F /* main.m in Sources */,
 				F43FECE3168107720067CD1F /* HCAppDelegate.m in Sources */,
+				F43FECF3168108A50067CD1F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HCAnimator/HCAnimator-Prefix.pch";
-				INFOPLIST_FILE = "HCAnimator/HCAnimator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HCAnimator/HCAnimatorExample-Prefix.pch";
+				INFOPLIST_FILE = "HCAnimator/HCAnimatorExample-Info.plist";
+				PRODUCT_NAME = HCAnimatorExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -249,9 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HCAnimator/HCAnimator-Prefix.pch";
-				INFOPLIST_FILE = "HCAnimator/HCAnimator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HCAnimator/HCAnimatorExample-Prefix.pch";
+				INFOPLIST_FILE = "HCAnimator/HCAnimatorExample-Info.plist";
+				PRODUCT_NAME = HCAnimatorExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -259,7 +285,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F43FECC8168107720067CD1F /* Build configuration list for PBXProject "HCAnimator" */ = {
+		F43FECC8168107720067CD1F /* Build configuration list for PBXProject "HCAnimatorExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F43FECEA168107720067CD1F /* Debug */,
@@ -268,7 +294,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F43FECEC168107720067CD1F /* Build configuration list for PBXNativeTarget "HCAnimator" */ = {
+		F43FECEC168107720067CD1F /* Build configuration list for PBXNativeTarget "HCAnimatorExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F43FECED168107720067CD1F /* Debug */,
