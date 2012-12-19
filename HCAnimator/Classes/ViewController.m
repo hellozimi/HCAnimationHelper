@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HCAnimator.h"
 
 @interface ViewController ()
 
@@ -14,25 +15,33 @@
 
 @implementation ViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+float abc(float t, float b, float c, float d) {
+    if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+    return c/2*((t-=2)*t*t*t*t + 2) + b;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+    v.backgroundColor = [UIColor redColor];
+    
+    [HCAnimator periodWithDuration:1.3 delay:1.0 timingFunction:abc updateBlock:^(float progress) {
+        float left = (320 - 25) * progress;
+        
+        CGRect rect = v.frame;
+        rect.origin.x = left;
+        
+        v.frame = rect;
+    } completeBlock:^{
+        NSLog(@"Complete");
+    }];
+    
+    [self.view addSubview:v];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
