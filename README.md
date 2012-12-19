@@ -1,3 +1,3 @@
-#HCAnimator
+#HCAnimationHelper
 
-A Simple iOS animation framework
+A Simple iOS animation helper framework
